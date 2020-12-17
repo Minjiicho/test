@@ -34,49 +34,22 @@
       .widget .title {
         border-color: #c2c2c2;
       }
-      .widget .price {
-        color: #000000;
-      }
-      .widget .price {
-        font-size: 12px;
-      }
-      .widget .saleprice {
-        color: #777777;
-      }
-      .widget .saleprice {
-        font-size: 12px;
-      }
-      .widget .published_time {
-        color: #000000;
-      }
-      .widget .published_time {
-        font-size: 12px;
-      }
-      .widget .author {
-        color: #000000;
-      }
-      .widget .author {
-        font-size: 12px;
-      }
       .widget .item-link {
-        pointer-events: none;
+        pointer-events: none; /* temp to prevent click event */
       }
     </style>
   </head>
   <body class="body--h">
     <div class="widget-wrap">
-      <div
-        style=""
-        data-responsive-group="0"
-        class="widget widget--h line multipage"
-      >
+      <div data-responsive-group="0" class="widget widget--h line multipage">
+        <!-- swipe options -->
         <div
           data-total="3"
           data-item_total="6"
           data-item_count="2"
-          data-infinite="true"
+          data-infinite="false"
           data-animation_type="fadeIn"
-          data-autoswipe_seconds="3"
+          data-autoswipe_seconds="0"
           class="recommendations"
         >
           <div class="loading-cover"></div>
@@ -390,8 +363,8 @@
     </div>
     <div class="clear"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="//localhost:4001/dist/widget.min.js"></script>
-    <!-- <script src="//static.dable.io/dist/widget.min.js"></script> -->
+
+    <script src="//static.dable.io/dist/widget.min.js"></script>
     <script>
       var PARAMS = {
         widget_id: 'xlz9JG7Z',
@@ -416,9 +389,9 @@
         responsive: [],
         post_param: null,
         impressionlog_link:
-          '//localhost:4001/logs/services/yoonji_test/users/62971263.1606205383196/impression?source=&pick=&rm=50.1.1&cm=0.0.0&channel=new_design_test.fadeIn&reco_type=hot-items&cid=62971263.1606205383196&widget_id=xlz9JG7Z&reco_list_lz=NobwRAlgJmBcYBYCMCBMA2dBWMAaMAtgKYAuAFgPYzxYAMAdEo2AL67jRyIqoDMAHDnzFyVLnUbM2HatwS9aqVHkKlKsiUySt2kWcjQB2LAhUj14hlp0yuB1IMNm1Ymlam7O8e4YSnhLhru2tJ6djxY6NoBokGSIZ76PLzoAJzOsZbxNmHePIYpGRZu2aFecrwK-EWuYJoetnlo6LzKMcV1wawAukA&uri=',
+          'https://api.dable.io/logs/services/yoonji_test/users/62971263.1606205383196/impression?source=&pick=&rm=50.1.1&cm=0.0.0&channel=new_design_test.fadeIn&reco_type=hot-items&cid=62971263.1606205383196&widget_id=xlz9JG7Z&reco_list_lz=NobwRAlgJmBcYBYCMCBMA2dBWMAaMAtgKYAuAFgPYzxYAMAdEo2AL67jRyIqoDMAHDnzFyVLnUbM2HatwS9aqVHkKlKsiUySt2kWcjQB2LAhUj14hlp0yuB1IMNm1Ymlam7O8e4YSnhLhru2tJ6djxY6NoBokGSIZ76PLzoAJzOsZbxNmHePIYpGRZu2aFecrwK-EWuYJoetnlo6LzKMcV1wawAukA&uri=',
         exposelog_link:
-          '//localhost:4001/logs/services/yoonji_test/users/62971263.1606205383196/expose?source=&pick=&rm=50.1.1&cm=0.0.0&channel=new_design_test.fadeIn&reco_type=hot-items&cid=62971263.1606205383196&widget_id=xlz9JG7Z&reco_list_lz=NobwRAlgJmBcYBYCMCBMA2dBWMAaMAtgKYAuAFgPYzxYAMAdEo2AL67jRyIqoDMAHDnzFyVLnUbMWAXSA',
+          'https://api.dable.io/logs/services/yoonji_test/users/62971263.1606205383196/expose?source=&pick=&rm=50.1.1&cm=0.0.0&channel=new_design_test.fadeIn&reco_type=hot-items&cid=62971263.1606205383196&widget_id=xlz9JG7Z&reco_list_lz=NobwRAlgJmBcYBYCMCBMA2dBWMAaMAtgKYAuAFgPYzxYAMAdEo2AL67jRyIqoDMAHDnzFyVLnUbMWAXSA',
         ad_exposelog_links: [],
         ad_implog_links: [],
         ads: [],
